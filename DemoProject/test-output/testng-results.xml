@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-10T11:07:07 IST" name="Default suite" finished-at="2021-02-10T11:08:05 IST" duration-ms="58019">
+    <groups>
+    </groups>
+    <test started-at="2021-02-10T11:07:07 IST" name="Default test" finished-at="2021-02-10T11:08:05 IST" duration-ms="58019">
+      <class name="firstAssignment.AmazonTest">
+        <test-method is-config="true" signature="openBrowserTest()[pri:0, instance:firstAssignment.AmazonTest@163e4e87]" started-at="2021-02-10T11:07:07 IST" name="openBrowserTest" finished-at="2021-02-10T11:07:18 IST" duration-ms="10557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserTest -->
+        <test-method signature="homePageTest()[pri:1, instance:firstAssignment.AmazonTest@163e4e87]" started-at="2021-02-10T11:07:18 IST" name="homePageTest" finished-at="2021-02-10T11:07:24 IST" duration-ms="6450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTest -->
+        <test-method signature="selectBrandTest()[pri:2, instance:firstAssignment.AmazonTest@163e4e87]" started-at="2021-02-10T11:07:24 IST" name="selectBrandTest" finished-at="2021-02-10T11:07:31 IST" duration-ms="6986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrandTest -->
+        <test-method signature="setPriceTest()[pri:3, instance:firstAssignment.AmazonTest@163e4e87]" started-at="2021-02-10T11:07:31 IST" name="setPriceTest" finished-at="2021-02-10T11:07:34 IST" duration-ms="2666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPriceTest -->
+        <test-method signature="selectMemoryTest()[pri:4, instance:firstAssignment.AmazonTest@163e4e87]" started-at="2021-02-10T11:07:34 IST" name="selectMemoryTest" finished-at="2021-02-10T11:07:36 IST" duration-ms="1795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectMemoryTest -->
+        <test-method signature="selectScreenTest()[pri:5, instance:firstAssignment.AmazonTest@163e4e87]" started-at="2021-02-10T11:07:36 IST" name="selectScreenTest" finished-at="2021-02-10T11:07:56 IST" duration-ms="20128" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [try] but found [catch]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [try] but found [catch]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.qa.pages.FilterPage.SelectScreenSize(FilterPage.java:78)
+at firstAssignment.AmazonTest.selectScreenTest(AmazonTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectScreenTest -->
+        <test-method signature="selectProductTest()[pri:6, instance:firstAssignment.AmazonTest@163e4e87]" started-at="2021-02-10T11:07:56 IST" name="selectProductTest" finished-at="2021-02-10T11:07:56 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProductTest -->
+        <test-method signature="selectReviewTest()[pri:7, instance:firstAssignment.AmazonTest@163e4e87]" started-at="2021-02-10T11:07:56 IST" name="selectReviewTest" finished-at="2021-02-10T11:08:04 IST" duration-ms="8445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectReviewTest -->
+        <test-method signature="getReviewTest()[pri:8, instance:firstAssignment.AmazonTest@163e4e87]" started-at="2021-02-10T11:08:04 IST" name="getReviewTest" finished-at="2021-02-10T11:08:04 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReviewTest -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:firstAssignment.AmazonTest@163e4e87]" started-at="2021-02-10T11:08:04 IST" name="closebrowser" finished-at="2021-02-10T11:08:05 IST" duration-ms="704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- firstAssignment.AmazonTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
